@@ -26,7 +26,7 @@ public class mainFile {
 			System.out.println("Select from the list:");
 			System.out.println("1.New Registration"+"\n"
 					+"2.Update"+"\n"+"3.Delete"+"\n"+"4.Search"+"\n"+"5.download"+"\n"+"6.Buy policy"+
-					"\n7.Updatepolicy"+"\n8.Exit");
+					"\n7.Updatepolicy"+"\n8.agentregistartion"+"\n9.agent Search"+"\n10.Exit");
 			int input=sc.nextInt();
 			int flag=0;
 
@@ -115,11 +115,19 @@ public class mainFile {
 				}
 				break;
 
+				
 			case 8: AgentDO newAgent=new AgentDO();
 			AgentRegistration a=new AgentRegistration();
 			a.newAgentRegistration(newAgent);
+			agentlist.put(newAgent.getAgentID(), newAgent);
 			break;
+			
+			case 9:agentWiseSearch agentsearch=new agentWiseSearch();
+			agentsearch.searchagent(agentlist,userdetails,Insurancelist);
 
+			case 10:
+				flag=1;
+				break;
 			default: System.out.println("Enter a valid input:");
 			}
 

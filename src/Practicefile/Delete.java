@@ -13,7 +13,6 @@ public class Delete {
 			System.out.println(key.getKey());
 		}
 		String sequence=sc.next();
-		int size=userdetails.size();
 		for(Map.Entry key:userdetails.entrySet()){
 			if(sequence.equalsIgnoreCase((String) key.getKey()) ){
 				userdetails.remove(sequence);

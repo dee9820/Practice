@@ -7,16 +7,17 @@ import java.util.Scanner;
 
 public class BuyInsurance {
 
-	public void buypolicy(String partySeq, LinkedHashMap<String, AgentDO> agentlist, LinkedHashMap<String, LinkedHashMap<String, BasePolicyDO>> insurancelist) {
+	public void buypolicy(String partySeq, LinkedHashMap<String, AgentDO> agentlist, 
+			LinkedHashMap<String, LinkedHashMap<String, BasePolicyDO>> insurancelist) {
 		Scanner sc=new Scanner(System.in);
-		LinkedHashMap<String, BasePolicyDO> policy;
+		LinkedHashMap<String, BasePolicyDO> policy=insurancelist.get(partySeq);
 
-		if(insurancelist.containsKey(partySeq)){
-			policy=insurancelist.get(partySeq);
-		}
-		else{
-			policy=new LinkedHashMap<String, BasePolicyDO>();
-		}
+//		if(insurancelist.containsKey(partySeq)){
+//			policy=insurancelist.get(partySeq);
+//		}
+//		else{
+//			policy=new LinkedHashMap<String, BasePolicyDO>();
+//		}
 
 		while(true){
 			int flag=0;

@@ -4,6 +4,11 @@ public class AgentDO {
 	String AgentID;
 	String AgentName;
 	
+	@Override
+	public String toString() {
+		return "AgentDO [AgentID=" + AgentID + ", AgentName=" + AgentName + "]";
+	}
+
 	public String getAgentID() {
 		return AgentID;
 	}
