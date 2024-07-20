@@ -13,7 +13,7 @@ public class mainFile {
 
 
 	public static void main(String[] args) throws Exception {
-		System.out.println("hii git from gitbub");
+		System.out.println("hii git from git");
 		Scanner sc=new Scanner(System.in);
 		LinkedHashMap<String,Object> userdetails=new LinkedHashMap<String,Object>();
 		LinkedHashMap<String, LinkedHashMap<String, BasePolicyDO>> Insurancelist=new 
